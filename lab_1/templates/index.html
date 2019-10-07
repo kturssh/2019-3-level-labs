@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Titles of ru-good site</title>
+</head>
+<body>
+    <h1>Science articles</h1>
+        <h2>Источник: <a href='http://ru-good.ru/category/science'>http://ru-good.ru/category/science</a></h2>
+        <ol>
+             {% for i in articles %}
+                  <li>{{ i['title'] }}</li>
+             {% endfor %}
+        </ol>
+</body>
+</html>
