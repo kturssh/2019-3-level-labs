@@ -1,0 +1,5 @@
+bs4==3.2
+json==3.2
+unittest==3.2
+requests==2.18.4
+datetime==3.2
