@@ -1,5 +1,5 @@
 import unittest
-import crawler
+import secondtry
 import json
 
 url = 'http://ru-good.ru/category/science'
@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_html_return(self):
 
-        crawler.get_html_page(url)
+        secondtry.get_html_page(url)
 
         with open('articles.json', encoding='utf-8') as f_obj:
             f = f_obj.readlines()
@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_check_titles(self):
 
-        crawler.get_html_page(url)
+        secondtry.get_html_page(url)
 
         with open('articles.json', encoding='utf-8') as f_obj:
             js_file = json.load(f_obj)
