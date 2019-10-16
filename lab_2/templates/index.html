@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Titles of ru-good site</title>
+    <style>
+    .a{
+    font-family: cursive;
+    width: 1200px; /* Ширина блока */
+    height: 800px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    background: #fc0; /* Цвет фона блока */
+    border: 1px solid #000; /* Рамка блока */
+    padding: 10px; /* Отступ внутри блока */
+   }
+</style>
+</head>
+<body>
+    <div class="a">
+        <h1>Science articles</h1>
+        <form >
+            <button name = "action" type = submit formaction = "/action" >Refresh</button>
+        </form>
+        <h2>Source: <a href='http://ru-good.ru/category/science'>http://ru-good.ru/category/science</a></h2>
+        <ol>
+             {% for i in articles %}
+                  <li>{{ i['title'] }}</li>
+             {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>
